@@ -11,6 +11,7 @@ body {
     align-items: center;
     justify-content: center;
     height: 80vh;
+    margin: 0;
     overflow: hidden;
 }
 
@@ -34,7 +35,20 @@ h1 {
 }
 
 .figure-part {
-    display:none;
+    display: none;
+}
+
+.wrong-letter-container {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    display: flex;
+    flex-direction: column;
+    text-align: right;
+}
+
+.wrong-letter-container {
+    margin: 0 0 5px;
 }
 
 .wrong-letter-container span {
@@ -61,7 +75,7 @@ h1 {
 }
 
 .popup-container {
-    background-color: rgba(0,0,0,0);
+    background-color: rgba(0,0,0,0.3);
     position: fixed;
     top: 0;
     bottom: 0;
@@ -107,7 +121,7 @@ h1 {
     transition: transform 0.3s ease-in-out;
 }
 
-.notification-container {
+.notification-container p{
     margin: 0;
 }
 
